@@ -1,4 +1,6 @@
-This is a Rails app to show a thread unsafe behavior of [ActiveModelSerializers](https://github.com/rails-api/active_model_serializers).
+This is a Rails app to show a thread unsafe behavior of [ActiveModelSerializers](https://github.com/rails-api/active_model_serializers) < v0.10.7.
+
+[The original issue here](https://github.com/rails-api/active_model_serializers/issues/2270)
 
 ActiveModelSerializers does not work properly when processing resources concurrently with multi threading.
 When multiple thread are serializing concurrently, a resource to be serialized can be replaced with another resource by another thread. This is because ActiveModelSerializers stores resource instances in serializer classes, the stored resources are shared among threads, and this produces totally unexpected results.
