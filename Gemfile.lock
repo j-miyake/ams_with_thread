@@ -165,7 +165,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers
+  active_model_serializers (= 0.10.7)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -182,4 +182,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.2
+   1.17.2
